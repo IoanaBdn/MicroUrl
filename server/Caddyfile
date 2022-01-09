@@ -1,4 +1,4 @@
-short-api.snipd.io {
+empty-pixels.com {
   reverse_proxy url-shortener-server:4000  {
     header_down Strict-Transport-Security max-age=31536000;
    }

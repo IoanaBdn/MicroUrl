@@ -18,6 +18,9 @@ function URLShortenerForm() {
       setLoading(true);
 
       setShortUrl(null);
+
+      console.log("SERVER_ENDPOINTS: " + JSON.stringify(SERVER_ENDPOINTS));
+
       const result = await axios
         .post(`${SERVER_ENDPOINTS}/api/url`, {
           destination,

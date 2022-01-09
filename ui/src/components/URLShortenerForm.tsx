@@ -32,7 +32,6 @@ function URLShortenerForm() {
     }
   }
 
-  ////////////////////////////////
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -45,6 +44,7 @@ function URLShortenerForm() {
   };
 
   const validURL = (url: string) => {
+    //eslint-disable-next-line
     const pattern = new RegExp(
       /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=+$,\w]+@)?[A-Za-z0-9.-]+|(?:www\.|[-;:&=+$,\w]+@)[A-Za-z0-9.-]+)((?:\/[+~%\/.\w-]*)?\??(?:[-+=&;%@.\w]*)#?\w*)?)/gm
     );
